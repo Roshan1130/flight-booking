@@ -8,6 +8,7 @@ public class PriceService {
 	
 	public void getticket() {
 		 System.out.println(" into the system");
+		 System.out.println("ahgdjaksh");
 	}
 
 }
