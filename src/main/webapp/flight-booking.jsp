@@ -42,7 +42,7 @@
 </style>
 </head>
 <body>
-	<form:form id="form" modelAttribute="mavAtt" action="flight-booking"
+	<form:form id="form" modelAttribute="mavAtt" action="booking-detail"
 		method="post">
 		<table align="center">
 			<tr> 
@@ -50,6 +50,8 @@
 				<input type="radio" name="trip" value="otrip"> One-Way
  				<input type="radio" name="trip" value="rtrip"> Round-Trip<br>
   			</td>
+  			<td><form:input path="trip" name="trip" id="trip"/></td>
+  			
 			</tr>
 			<tr><td> 
 			From :		<div class="dropdown">
@@ -62,7 +64,9 @@
 							<a href="#">Philadelphia</a>							
 						</div>
 					</div>
-				</td> </tr>
+				</td> 
+				<td><form:input path="from" name="from" id="from"/></td>
+				</tr>
 				<tr><td> 
 			To :		<div class="dropdown">
 						<button class="dropbtn">Select</button>
@@ -74,7 +78,9 @@
 							<a href="#">Philadelphia</a>	
 						</div>
 					</div>
-				</td> </tr>
+				</td> 
+				<td><form:input path="to" name="to" id="to"/></td>
+				</tr>
 				<tr><td> 
 			Airlines :	<div class="dropdown">
 						<button class="dropbtn">Select</button>
@@ -84,13 +90,11 @@
 							<a href="#">United Airlines</a>
 						</div>
 					</div>
-				</td> </tr>
+				</td> 
+				<td><form:input path="airline" name="airline" id="airline"/></td>
+				</tr>
 				<tr>
-
-				<td></td>
-
-				<td align="left"><form:button id="save" name="save">Save</form:button>
-
+				<td align="left"><form:button id="process" name="process">Process</form:button>
 				</td>
 
 			</tr>
