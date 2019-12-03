@@ -13,8 +13,10 @@ public class FlightBookingController {
 	@RequestMapping(value = "flight-booking", method = RequestMethod.GET)
 	public ModelAndView showPage() {
 		ModelAndView mav = new ModelAndView("flight-booking");
+		System.out.println("run");
 		FlightBookingDto fbd  = new FlightBookingDto();
 		mav.addObject("mavAtt", fbd);
 		return mav;
+		
 	}
 }
