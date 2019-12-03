@@ -14,7 +14,7 @@ public class FlightBookingController {
 	public ModelAndView showPage() {
 		ModelAndView mav = new ModelAndView("flight-booking");
 		FlightBookingDto fbd  = new FlightBookingDto();
-		mav.addObject("mav1", fbd);
+		mav.addObject("mavAtt", fbd);
 		return mav;
 	}
 }
