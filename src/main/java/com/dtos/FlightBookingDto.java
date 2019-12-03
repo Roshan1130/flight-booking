@@ -8,7 +8,7 @@ public class FlightBookingDto {
 	private String to;
 	private String airline;
 	private Date date;
-	private double price;
+	private String price;
 
 	public String getTrip() {
 		return trip;
@@ -50,11 +50,11 @@ public class FlightBookingDto {
 		this.date = date;
 	}
 
-	public double getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 
